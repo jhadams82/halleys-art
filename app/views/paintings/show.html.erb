@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @painting.name %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @painting.url %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @painting.price %>
+</p>
+
+<p>
+  <strong>Medium:</strong>
+  <%= @painting.medium %>
+</p>
+
+<p>
+  <strong>Desc:</strong>
+  <%= @painting.desc %>
+</p>
+
+<p>
+  <strong>Sold:</strong>
+  <%= @painting.sold %>
+</p>
+
+<%= link_to 'Edit', edit_painting_path(@painting) %> |
+<%= link_to 'Back', paintings_path %>
