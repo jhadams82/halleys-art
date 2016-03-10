@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: jhadams82
+  api_key: '551769842222664'
+  api_secret: 6oKotFwaeBPWhZdVAru1haLj130
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: jhadams82
+  api_key: '551769842222664'
+  api_secret: 6oKotFwaeBPWhZdVAru1haLj130
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: jhadams82
+  api_key: '551769842222664'
+  api_secret: 6oKotFwaeBPWhZdVAru1haLj130
+  enhance_image_tag: true
+  static_image_support: false
