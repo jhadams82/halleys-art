@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Paintings</h1>
+<h2>Listing Paintings</h2>
 
-<table>
+<table cellpadding="10">
   <thead>
     <tr>
       <th>Name</th>
@@ -19,14 +19,14 @@
     <% @paintings.each do |painting| %>
       <tr>
         <td><%= painting.name %></td>
-        <td><%= painting.url %></td>
+        <td><%= cl_image_tag(painting.url, :width=>200, :crop=>:thumb) %></td>
         <td><%= painting.price %></td>
         <td><%= painting.medium %></td>
         <td><%= painting.desc %></td>
         <td><%= painting.sold %></td>
         <td><%= link_to 'Show', painting %></td>
-        <td><%= link_to 'Edit', edit_painting_path(painting) %></td>
-        <td><%= link_to 'Destroy', painting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <!-- <td><%#= link_to 'Edit', edit_painting_path(painting) %></td> -->
+        <!-- <td><%#= link_to 'Destroy', painting, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
       </tr>
     <% end %>
   </tbody>
@@ -34,4 +34,4 @@
 
 <br>
 
-<%= link_to 'New Painting', new_painting_path %>
+<%#= link_to 'New Painting', new_painting_path %>

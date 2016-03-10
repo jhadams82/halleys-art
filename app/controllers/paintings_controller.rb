@@ -1,5 +1,5 @@
 class PaintingsController < ApplicationController
-  before_action :set_painting, only: [:show, :edit, :update, :destroy]
+  before_action :set_painting, only: [:show, :show_big, :edit, :update, :destroy]
 
   # GET /paintings
   # GET /paintings.json
@@ -11,7 +11,10 @@ class PaintingsController < ApplicationController
   # GET /paintings/1.json
   def show
   end
-
+  
+  def show_big
+  end
+  
   # GET /paintings/new
   def new
     @painting = Painting.new

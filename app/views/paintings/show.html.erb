@@ -7,7 +7,8 @@
 
 <p>
   <strong>Image:</strong><br>
-  <%= cl_image_tag( @painting.url, :width=>200, :crop=>:thumb ) %>
+  <%= link_to cl_image_tag( @painting.url, :width=>200, :crop=>:thumb ), {:action => 'show_big', :controller => 'paintings'} %><br>
+  click image to enlarge
 </p>
 
 <p>
@@ -30,5 +31,5 @@
   <%= @painting.sold %>
 </p>
 
-<%= link_to 'Edit', edit_painting_path(@painting) %> |
+<%#= link_to 'Edit', edit_painting_path(@painting) %>
 <%= link_to 'Back', paintings_path %>

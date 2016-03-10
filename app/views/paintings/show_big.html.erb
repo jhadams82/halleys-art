@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @painting.name %>
+</p>
+
+<p>
+  <strong>Image:</strong><br>
+  <%= cl_image_tag( @painting.url ) %>
+</p>
+
+<%= link_to 'Back', painting_path(@painting) %>
