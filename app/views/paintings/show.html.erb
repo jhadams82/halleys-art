@@ -6,8 +6,8 @@
 </p>
 
 <p>
-  <strong>Url:</strong>
-  <%= @painting.url %>
+  <strong>Image:</strong><br>
+  <%= cl_image_tag( @painting.url, :width=>200, :crop=>:thumb ) %>
 </p>
 
 <p>
